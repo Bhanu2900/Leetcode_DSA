@@ -4,7 +4,7 @@ class Solution:
             return False
         rn = 0
         num = x
-        while num >0:
+        while num != 0:
             rn = rn * 10 + num % 10
             num = num //10
         return rn == x
