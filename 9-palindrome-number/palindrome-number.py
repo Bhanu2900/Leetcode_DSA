@@ -5,9 +5,8 @@ class Solution:
         rn = 0
         num = x
         while num >0:
-            ld = num % 10
-            num //= 10
-            rn = rn * 10 + ld
+            rn = rn * 10 + num % 10
+            num = num //10
         return rn == x
             
                 
