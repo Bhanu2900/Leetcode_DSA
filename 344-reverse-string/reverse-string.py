@@ -1,12 +1,12 @@
 class Solution:
     def reverseString(self, s: List[str]) -> None:
 
-        # a = left most element index,  b = right most element index
+        # left = left most element index,  right = right most element index
         """
         Do not return anything, modify s in-place instead.
         """
-        a , b = 0, len(s)-1
-        while a < b:
-            s[a], s[b] = s[b], s[a]
-            a += 1
-            b -= 1
+        left , right = 0, len(s)-1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
