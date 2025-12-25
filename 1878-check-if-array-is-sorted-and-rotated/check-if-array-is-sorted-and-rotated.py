@@ -4,7 +4,6 @@ class Solution:
         count = 0
         i = 0
         n = len(nums)
-        i = 0
         while i < n:
             if nums[i] > nums[(i + 1) % n]:
                 count += 1
